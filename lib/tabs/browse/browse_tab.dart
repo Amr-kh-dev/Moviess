@@ -72,7 +72,7 @@ class BrowserTab extends StatelessWidget {
                         },
                         child: CustomBrowser(
                           title: genre['name'] ?? 'Unknown',
-                          imageUrl: 'assets/images/action.png',
+                          imageUrl: 'assets/image/action.png',
                         ),
                       );
                     },

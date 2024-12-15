@@ -18,13 +18,14 @@ class CustomWatchlist extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(8),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Stack(
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8),
                       child: Image.asset(
-                        'assets/images/watchlist.png',
+                        'assets/image/watchlist.png',
                         width: 140,
                         height: 80,
                         fit: BoxFit.cover,
@@ -52,7 +53,7 @@ class CustomWatchlist extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  width: 16,
+                  width: 10,
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -76,7 +77,7 @@ class CustomWatchlist extends StatelessWidget {
                       height: 8,
                     ),
                     Text(
-                      'Rosa Salazar, Christoph Waltz',
+                      'Rosa Salazar, Christoph ',
                       style: Theme.of(context).textTheme.labelLarge?.copyWith(
                             color: AppTheme.white.withOpacity(0.6745),
                           ),
@@ -88,8 +89,8 @@ class CustomWatchlist extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          height: 30,
-          width: 358,
+          height: 20,
+          width: 35,
           child: Divider(
             color: AppTheme.grey70,
             thickness: 1,
